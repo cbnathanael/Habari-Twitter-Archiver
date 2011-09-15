@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<pluggable type="plugin">
+	<name>Twitter Archiver</name>
+	<license url="http://www.apache.org/licenses/LICENSE-2.0.html">Apache Software License 2.0</license>
+	<author url="http://coffeebot.net">Nathanael Phillips</author>
+	<version>0.1a</version>
+	<url>http://www.coffeebot.net/</url>
+	<description><![CDATA[Twitter Archiving plugin for Habari.]]></description>
+	<copyright>2010</copyright>
+	<guid>f5b34f5a-3014-4477-be1d-3bd2d419812b</guid>
+	<help>
+		<value><![CDATA[
+			<p>This plugin will run as a cron job to grab hourly or daily snapshots of your twitter timeline and turn them into blog posts.</p>
+		]]></value>
+	</help>
+</pluggable>
+ 
