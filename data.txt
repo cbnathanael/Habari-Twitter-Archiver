@@ -1,44 +1,11 @@
 Array
 (
-    [slug] => twitter-2011-09-15-1
+    [slug] => twitter-2011-09-16
     [user_id] => 1
-    [pubdate] => 1316053067
-    [status] => 1
+    [pubdate] => 
+    [status] => 2
     [content_type] => 1
-    [title] => @CBNathanael said  
-    [tags] => 
-    [content] => forget it. i'm rolling back to froyo. hopefully that will solve speed issues on this ancient phone.
-)
-Array
-(
-    [slug] => twitter-2011-09-15-2
-    [user_id] => 1
-    [pubdate] => 1316053426
-    [status] => 1
-    [content_type] => 1
-    [title] => @CBNathanael said  
-    [tags] => 
-    [content] => I don't know how to interpret this...but since quitting my job, the last two weeks have been some of the happiest I've had in ages.
-)
-Array
-(
-    [slug] => twitter-2011-09-15-3
-    [user_id] => 1
-    [pubdate] => 1316053459
-    [status] => 1
-    [content_type] => 1
-    [title] => @CBNathanael said  
-    [tags] => 
-    [content] => I feel rested, energetic, and excited, even though I don't have a clue how we're going to survive in the near future.
-)
-Array
-(
-    [slug] => twitter-2011-09-15-4
-    [user_id] => 1
-    [pubdate] => 1316103096
-    [status] => 1
-    [content_type] => 1
-    [title] => @CBNathanael said  
-    [tags] => 
-    [content] => Well. I'm here. Now what?
+    [title] => Author tweeted
+    [tags] => twitter
+    [content] => <div id="tweetarchive"><p class="tweetarchive_text">@prhickey #facepalm</p><div id="tweetarchive"><p class="tweetarchive_text">Well. I'm here. Now what?</p><div id="tweetarchive"><p class="tweetarchive_text">@tradica I still need steps 2 and ????</p><div id="tweetarchive"><p class="tweetarchive_text">@rrrrrrrix magic smoke?</p><div id="tweetarchive"><p class="tweetarchive_text">I started using #pomodoroTechnique this week. It's done wonders for my workflow.</p><div id="tweetarchive"><p class="tweetarchive_text">And in your dreams you can just dream of me / and I will be comin' home</p><div id="tweetarchive"><p class="tweetarchive_text">because I am an ordinary guy / yes, except for when I spy</p><div id="tweetarchive"><p class="tweetarchive_text">#ChinoBandito in exchange for 10 minutes of work fixing a fan in a laptop? #yesplease</p><div id="tweetarchive"><p class="tweetarchive_text">Current status:  http://t.co/QWfrR81i</p><div id="tweetarchive"><p class="tweetarchive_text">@prhickey got military connections? @USAA kicks ass.</p><div id="tweetarchive"><p class="tweetarchive_text">@huertanix They /want/ people to present. Hot Pockets will just turn people away. But..hot pockey....? cc @jacobrosenthal</p><div id="tweetarchive"><p class="tweetarchive_text">Dangit. I don't have a suit. Maybe I'll rock it "Emperor's New Suit" style. #nosiriamnotnaked</p><div id="tweetarchive"><p class="tweetarchive_text">@AcmePhoto zuh? what's going on?</p><div id="tweetarchive"><p class="tweetarchive_text">@AcmePhoto yeah, I did a little googling. bizarre.</p><div id="tweetarchive"><p class="tweetarchive_text">Massive Attack? #yesplease</p>
 )
