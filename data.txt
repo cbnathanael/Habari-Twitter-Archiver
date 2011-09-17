@@ -1,11 +1,187 @@
 Array
 (
-    [slug] => twitter-2011-09-16
+    [slug] => twitter-2011-09-15-1
     [user_id] => 1
-    [pubdate] => 
+    [pubdate] => 1316109953
     [status] => 2
     [content_type] => 1
     [title] => Author tweeted
     [tags] => twitter
-    [content] => <div id="tweetarchive"><p class="tweetarchive_text">@prhickey #facepalm</p><div id="tweetarchive"><p class="tweetarchive_text">Well. I'm here. Now what?</p><div id="tweetarchive"><p class="tweetarchive_text">@tradica I still need steps 2 and ????</p><div id="tweetarchive"><p class="tweetarchive_text">@rrrrrrrix magic smoke?</p><div id="tweetarchive"><p class="tweetarchive_text">I started using #pomodoroTechnique this week. It's done wonders for my workflow.</p><div id="tweetarchive"><p class="tweetarchive_text">And in your dreams you can just dream of me / and I will be comin' home</p><div id="tweetarchive"><p class="tweetarchive_text">because I am an ordinary guy / yes, except for when I spy</p><div id="tweetarchive"><p class="tweetarchive_text">#ChinoBandito in exchange for 10 minutes of work fixing a fan in a laptop? #yesplease</p><div id="tweetarchive"><p class="tweetarchive_text">Current status:  http://t.co/QWfrR81i</p><div id="tweetarchive"><p class="tweetarchive_text">@prhickey got military connections? @USAA kicks ass.</p><div id="tweetarchive"><p class="tweetarchive_text">@huertanix They /want/ people to present. Hot Pockets will just turn people away. But..hot pockey....? cc @jacobrosenthal</p><div id="tweetarchive"><p class="tweetarchive_text">Dangit. I don't have a suit. Maybe I'll rock it "Emperor's New Suit" style. #nosiriamnotnaked</p><div id="tweetarchive"><p class="tweetarchive_text">@AcmePhoto zuh? what's going on?</p><div id="tweetarchive"><p class="tweetarchive_text">@AcmePhoto yeah, I did a little googling. bizarre.</p><div id="tweetarchive"><p class="tweetarchive_text">Massive Attack? #yesplease</p>
+    [content] => <p>@<a href="http://twitter.com/rrrrrrrix">rrrrrrrix</a> magic smoke?</p>
+)
+Array
+(
+    [slug] => twitter-2011-09-15-2
+    [user_id] => 1
+    [pubdate] => 1316109990
+    [status] => 2
+    [content_type] => 1
+    [title] => Author tweeted
+    [tags] => twitter
+    [content] => <p>I started using <a href="http://hashtags.org/search?query=pomodoroTechnique">#pomodoroTechnique</a> this week. It's done wonders for my workflow.</p>
+)
+Array
+(
+    [slug] => twitter-2011-09-15-3
+    [user_id] => 1
+    [pubdate] => 1316120804
+    [status] => 2
+    [content_type] => 1
+    [title] => Author tweeted
+    [tags] => twitter
+    [content] => <p>And in your dreams you can just dream of me / and I will be comin' home</p>
+)
+Array
+(
+    [slug] => twitter-2011-09-15-4
+    [user_id] => 1
+    [pubdate] => 1316120820
+    [status] => 2
+    [content_type] => 1
+    [title] => Author tweeted
+    [tags] => twitter
+    [content] => <p>because I am an ordinary guy / yes, except for when I spy</p>
+)
+Array
+(
+    [slug] => twitter-2011-09-15-5
+    [user_id] => 1
+    [pubdate] => 1316121426
+    [status] => 2
+    [content_type] => 1
+    [title] => Author tweeted
+    [tags] => twitter
+    [content] => <p><a href="http://hashtags.org/search?query=ChinoBandito">#ChinoBandito</a> in exchange for 10 minutes of work fixing a fan in a laptop? <a href="http://hashtags.org/search?query=yesplease">#yesplease</a></p>
+)
+Array
+(
+    [slug] => twitter-2011-09-15-6
+    [user_id] => 1
+    [pubdate] => 1316125880
+    [status] => 2
+    [content_type] => 1
+    [title] => Author tweeted
+    [tags] => twitter
+    [content] => <p>Current status:  <a href="http://t.co/QWfrR81i">http://t.co/QWfrR81i</a></p>
+)
+Array
+(
+    [slug] => twitter-2011-09-15-7
+    [user_id] => 1
+    [pubdate] => 1316134850
+    [status] => 2
+    [content_type] => 1
+    [title] => Author tweeted
+    [tags] => twitter
+    [content] => <p>@<a href="http://twitter.com/prhickey">prhickey</a> got military connections? @<a href="http://twitter.com/USAA">USAA</a> kicks ass.</p>
+)
+Array
+(
+    [slug] => twitter-2011-09-15-8
+    [user_id] => 1
+    [pubdate] => 1316144094
+    [status] => 2
+    [content_type] => 1
+    [title] => Author tweeted
+    [tags] => twitter
+    [content] => <p>@<a href="http://twitter.com/huertanix">huertanix</a> They /want/ people to present. Hot Pockets will just turn people away. But..hot pockey....? cc @<a href="http://twitter.com/jacobrosenthal">jacobrosenthal</a></p>
+)
+Array
+(
+    [slug] => twitter-2011-09-16-9
+    [user_id] => 1
+    [pubdate] => 1316189875
+    [status] => 2
+    [content_type] => 1
+    [title] => Author tweeted
+    [tags] => twitter
+    [content] => <p>Dangit. I don't have a suit. Maybe I'll rock it "Emperor's New Suit" style. <a href="http://hashtags.org/search?query=nosiriamnotnaked">#nosiriamnotnaked</a></p>
+)
+Array
+(
+    [slug] => twitter-2011-09-16-10
+    [user_id] => 1
+    [pubdate] => 1316201398
+    [status] => 2
+    [content_type] => 1
+    [title] => Author tweeted
+    [tags] => twitter
+    [content] => <p>@<a href="http://twitter.com/AcmePhoto">AcmePhoto</a> zuh? what's going on?</p>
+)
+Array
+(
+    [slug] => twitter-2011-09-16-11
+    [user_id] => 1
+    [pubdate] => 1316202381
+    [status] => 2
+    [content_type] => 1
+    [title] => Author tweeted
+    [tags] => twitter
+    [content] => <p>@<a href="http://twitter.com/AcmePhoto">AcmePhoto</a> yeah, I did a little googling. bizarre.</p>
+)
+Array
+(
+    [slug] => twitter-2011-09-16-12
+    [user_id] => 1
+    [pubdate] => 1316205230
+    [status] => 2
+    [content_type] => 1
+    [title] => Author tweeted
+    [tags] => twitter
+    [content] => <p>Massive Attack? <a href="http://hashtags.org/search?query=yesplease">#yesplease</a></p>
+)
+Array
+(
+    [slug] => twitter-2011-09-16-13
+    [user_id] => 1
+    [pubdate] => 1316227486
+    [status] => 2
+    [content_type] => 1
+    [title] => Author tweeted
+    [tags] => twitter
+    [content] => <p>@<a href="http://twitter.com/willbradley">willbradley</a> Awesome. And so true. sed gets us into bed every time.</p>
+)
+Array
+(
+    [slug] => twitter-2011-09-16-14
+    [user_id] => 1
+    [pubdate] => 1316229152
+    [status] => 2
+    [content_type] => 1
+    [title] => Author tweeted
+    [tags] => twitter
+    [content] => <p>ugh. why is @<a href="http://twitter.com/twitter">twitter</a> returning replies and RTs when I'm specifically asking it not to?</p>
+)
+Array
+(
+    [slug] => twitter-2011-09-16-15
+    [user_id] => 1
+    [pubdate] => 1316230628
+    [status] => 2
+    [content_type] => 1
+    [title] => Author tweeted
+    [tags] => twitter
+    [content] => <p>@<a href="http://twitter.com/willbradley">willbradley</a> @<a href="http://twitter.com/shaunastacy">shaunastacy</a> yeah...the fake ones are obnoxious, imo. Fortunately, my lady understands my geekiness, but doesn</p>
+)
+Array
+(
+    [slug] => twitter-2011-09-16-16
+    [user_id] => 1
+    [pubdate] => 1316230682
+    [status] => 2
+    [content_type] => 1
+    [title] => Author tweeted
+    [tags] => twitter
+    [content] => <p>@<a href="http://twitter.com/willbradley">willbradley</a> @<a href="http://twitter.com/shaunastacy">shaunastacy</a> ...doesn't pretend to know a lot. (like only reading the first chapter of a book; that's just lame)</p>
+)
+Array
+(
+    [slug] => twitter-2011-09-17-17
+    [user_id] => 1
+    [pubdate] => 1316273162
+    [status] => 2
+    [content_type] => 1
+    [title] => Author tweeted
+    [tags] => twitter
+    [content] => <p>When life hands you a lemon, just have another root beer.</p>
 )

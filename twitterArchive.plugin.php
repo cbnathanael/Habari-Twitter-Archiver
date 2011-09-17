@@ -263,16 +263,25 @@ class TwitterArchiver extends Plugin
       'since_id' => Options::get( 'twitterArchiver__last_id' ),   //CHANGE to reflect last time run, etc.
 			'include_rts' => Options::get( 'twitterArchiver__include_RT'),
 			'include_entities' => 1,
-			'exclude_replies' => Options::set( 'twitterArchiver__include_reply' )
+			'exclude_replies' => Options::get( 'twitterArchiver__include_reply' )
 		);
     $fp = fopen(dirname( __FILE__ ) .'/data.txt', 'w');
 	
 		$response = $connection->get('statuses/user_timeline',$parameters);
     //twitter returns tweets in descending order, we need them in ascending (the order in which they appeared)
-    //fwrite( $fp, print_r ($response, TRUE ) );
     $response = array_reverse( $response );
-
-        if ( Options::get( 'twitterArchiver__multiple_posts' ) == 0 ) {
+    
+    if ( Options::get( 'twitterArchiver__linkify_urls' ) == 1 ) {
+			foreach ( $response as $tweet ) {
+				/* link to all http: */
+				$tweet->text = preg_replace( '%https?://\S+?(?=(?:[.:?"!$&\'()*+,=]|)(?:\s|$))%i', "<a href=\"$0\">$0</a>", $tweet->text ); 
+				/* link to usernames */
+				$tweet->text = preg_replace( '/(?<!\w)@([\w-_.]{1,64})/', '@<a href="http://twitter.com/$1">$1</a>', $tweet->text ); 
+				/* link to hashtags */
+				$tweet->text = preg_replace( '/(?<!\w)#((?>\d{1,64}|)[\w-.]{1,64})/', '<a href="' . Options::get( 'twitterArchiver__hashtags_query' ) . '$1">#$1</a>', $tweet->text );
+			}
+		}
+    if ( Options::get( 'twitterArchiver__multiple_posts' ) == 0 ) {
       $post_content = '';
       foreach ( $response as $tweet ) {
         $post_content .= '<p class="tweetarchive_text">'.$tweet->text.'</p>';
@@ -313,7 +322,7 @@ class TwitterArchiver extends Plugin
             'content_type' => 1,
             'title' => Options::get( 'twitterArchiver__post_title' ),
             'tags' => Options::get( 'twitterArchiver__post_tags' ),
-            'content' => $tweet->text,
+            'content' => '<p>'.$tweet->text.'</p>',
           );
           
           $lastID = $tweet->id_str;
