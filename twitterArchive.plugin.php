@@ -205,14 +205,14 @@ class TwitterArchiver extends Plugin
     $post_fieldset = $ui->append( 'fieldset', 'twitterArchiver_post_settings', _t( 'Posting Options', 'twitterArchiver' ) );
     $twitterArchiver_post = $post_fieldset->append( 'text', 'post_title', 'twitterArchiver__post_title', _t( 'Title of Posts:', 'twitterArchiver' ) );
     $twitterArchiver_post = $post_fieldset->append( 'text', 'post_tags', 'twitterArchiver__post_tags', _t( 'Tags to apply to posts (comma separated):', 'twitterArchiver' ) );
-    $twitterArchiver_post = $post_fieldset->append( 'checkbox', 'multiple_posts', 'twitterArchiver__multiple_posts', _t( 'Combine tweets into single post:', 'twitterArchiver' ) );
+    $twitterArchiver_post = $post_fieldset->append( 'checkbox', 'multiple_posts', 'twitterArchiver__multiple_posts', _t( 'Create individual posts for each tweet:', 'twitterArchiver' ) );
     $twitterArchiver_post = $post_fieldset->append( 'checkbox', 'link_to_tweet', 'twitterArchiver__link_to_tweet', _t( 'Provide link to tweet:', 'twitterArchiver' ) );
 
 		$tweet_fieldset = $ui->append( 'fieldset', 'twitterArchiver_pull_settings', _t( 'Tweet Options', 'twitterArchiver' ) );
 		$twitterArchiver_show = $tweet_fieldset->append( 'select', 'frequency', 'twitterArchiver__frequency', _t( 'How often should it archive:', 'twitterArchiver' ) );
     $twitterArchiver_show->options = array( 'daily' => 'daily', 'hourly' => 'hourly' );
 		$twitterArchiver_show = $tweet_fieldset->append( 'checkbox', 'hide_replies', 'twitterArchiver__include_replies', _t( 'Do not include @replies', 'twitterArchiver' ) );
-		$twitterArchiver_show = $tweet_fieldset->append( 'checkbox', 'hide_retweets', 'twitterArchiver__include_RT', _t( 'Do not include retweets', 'twitterArchiver' ) );
+		$twitterArchiver_show = $tweet_fieldset->append( 'checkbox', 'hide_retweets', 'twitterArchiver__include_RT', _t( 'Include retweets', 'twitterArchiver' ) );
     $twitterArchiver_show = $tweet_fieldset->append( 'checkbox', 'linkify_urls', 'twitterArchiver__linkify_urls', _t('Linkify URLs') );
     $twitterArchiver_show = $tweet_fieldset->append( 'text', 'hashtags_query', 'twitterArchiver__hashtags_query', _t( '#hashtags query link:', 'twitterArchiver' ) );
     $twitterArchiver_show = $tweet_fieldset->append( 'text', 'query_count', 'twitterArchiver__query_count', _t( 'Number of tweets to query (20 default; adjust to reflect amount of tweets in your selected period):', 'twitterArchiver' ) );
@@ -252,7 +252,7 @@ class TwitterArchiver extends Plugin
 	**/
 	public function filter_create_archive()
 	{
-		//EventLog::log('creat archive start', 'info', 'default', 'TwitterArchiver', '');
+		EventLog::log('creat archive start', 'info', 'default', 'TwitterArchiver', '');
 		require_once dirname( __FILE__ ) . '/lib/twitteroauth/twitteroauth.php';	
 		$connection = new TwitterOAuth( TwitterArchiver::CONSUMER_KEY, TwitterArchiver::CONSUMER_SECRET, Options::get( 'twitterArchiver__access_token' ), Options::get( 'twitterArchiver__access_token_secret' ) ); //OAUTH_TOKEN, OAUTH_SECRET);
 		//EventLog::log( $connection->http_code, 'info', 'default', 'Twitter Archiver', '' );
@@ -268,6 +268,7 @@ class TwitterArchiver extends Plugin
     $fp = fopen(dirname( __FILE__ ) .'/data.txt', 'w');
 	
 		$response = $connection->get('statuses/user_timeline',$parameters);
+    //fwrite( $fp, print_r( $response, TRUE ) );
     //twitter returns tweets in descending order, we need them in ascending (the order in which they appeared)
     $response = array_reverse( $response );
     
@@ -277,28 +278,28 @@ class TwitterArchiver extends Plugin
 				$tweet->text = preg_replace( '%https?://\S+?(?=(?:[.:?"!$&\'()*+,=]|)(?:\s|$))%i', "<a href=\"$0\">$0</a>", $tweet->text ); 
 				/* link to usernames */
 				$tweet->text = preg_replace( '/(?<!\w)@([\w-_.]{1,64})/', '@<a href="http://twitter.com/$1">$1</a>', $tweet->text ); 
-				/* link to hashtags */
-				$tweet->text = preg_replace( '/(?<!\w)#((?>\d{1,64}|)[\w-.]{1,64})/', '<a href="' . Options::get( 'twitterArchiver__hashtags_query' ) . '$1">#$1</a>', $tweet->text );
+				/* link to hashtags np-- added break in the regex b/c the ? > combo broke vim's syntax hilighting and it drove me batty*/
+				$tweet->text = preg_replace( '/(?<!\w)#((?'.'>\d{1,64}|)[\w-.]{1,64})/', '<a href="' . Options::get( 'twitterArchiver__hashtags_query' ) . '$1">#$1</a>', $tweet->text );
 			}
 		}
     if ( Options::get( 'twitterArchiver__multiple_posts' ) == 0 ) {
+      $post = new Post();
       $post_content = '';
       foreach ( $response as $tweet ) {
         $post_content .= '<p class="tweetarchive_text">'.$tweet->text.'</p>';
         if( Options::get( 'twitterArchiver__link_to_tweet' ) == 1 ) {
-          '<p class="tweetarchive_date"><a href="http://www.twitter.com/#!/'.$tweet->screen_name.'/status/'.$tweet->id_str.'">'.strtotime('h:i:s A', $tweet->created_at).'</a></p>';
+          $post_content .= '<p class="tweetarchive_date"><a href="http://www.twitter.com/#!/'.$content->screen_name.'/status/'.$tweet->id_str.'">'.strtotime('h:i:s A', $tweet->created_at).'</a></p>';
         }
         else {
-         '<p class="tweetarchive_date">'.strtotime('h:i:s A', $tweet->created_at).'</p>';
+         $post_content .= '<p class="tweetarchive_date">'.strtotime('h:i:s A', $tweet->created_at).'</p>';
  
         }
         $lastID = $tweet->id_str;
       }
-      //$post = new Post();
      $postdata = array(
         'slug' => 'twitter-'.date('Y-m-d'),
         'user_id' => 1,
-        'pubdate' => strtotime( date() ),
+        'pubdate' => strtotime( "now" ),
         'status' => 2, // 1=draft, 2=published
         'content_type' => 1,
         'title' => Options::get( 'twitterArchiver__post_title' ),
@@ -306,35 +307,42 @@ class TwitterArchiver extends Plugin
         'content' => '<p class="tweetarchive_text">'.$post_content.'</p>',
       );
       fwrite( $fp, print_r( $postdata, TRUE ) ); 
+      $post = Post::create( $postdata );
     }
     else {
-      //$post = new Post();
       $i= 0;
     
       foreach ( $response as $tweet ) {
+        $post = new Post();
+        $post_content = '<p class="tweetarchive_text">' . $tweet->text . '</p>';
+        if( Options::get( 'twitterArchiver__link_to_tweet' ) == 1 ) {
+          $post_content .= '<p class="tweetarchive_date"><a href="http://www.twitter.com/#!/'.$content->screen_name.'/status/'.$tweet->id_str.'">'.strtotime('h:i:s A', $tweet->created_at).'</a></p>';
+        }
+        else {
+          $post_content .= '<p class="tweetarchive_date">'.strtotime('h:i:s A', $tweet->created_at).'</p>';
+        } 
+        $i++;
+        $postdata = array(
+          'slug' => 'twitter-'.date('Y-m-d', strtotime($tweet->created_at)).'-'.$i,
+          'user_id' => 1,
+          'pubdate' => strtotime( $tweet->created_at ),
+          'status' => 2, // 1=draft, 2=published
+          'content_type' => 1,
+          'title' => Options::get( 'twitterArchiver__post_title' ),
+          'tags' => Options::get( 'twitterArchiver__post_tags' ),
+          'content' => $post_content,
+        );
           
-          $i++;
-          $postdata = array(
-            'slug' => 'twitter-'.date('Y-m-d', strtotime($tweet->created_at)).'-'.$i,
-            'user_id' => 1,
-            'pubdate' => strtotime($tweet->created_at),
-            'status' => 2, // 1=draft, 2=published
-            'content_type' => 1,
-            'title' => Options::get( 'twitterArchiver__post_title' ),
-            'tags' => Options::get( 'twitterArchiver__post_tags' ),
-            'content' => '<p>'.$tweet->text.'</p>',
-          );
-          
-          $lastID = $tweet->id_str;
-          //$post = Post::create( $postdata );
-          //echo "<!-- ".$i."-->";
-          fwrite( $fp, print_r($postdata, TRUE) );
+        $lastID = $tweet->id_str;
+        $post = Post::create( $postdata );
+        unset( $post );
+        fwrite( $fp, print_r($postdata, TRUE) );
       }
     }
     
     fclose($fp);
     //Options::set( 'twitterArchiver__last_id', $lastID );
-		EventLog::log('creat archive end', 'info', 'default', 'TwitterArchiver', '');
+		EventLog::log('Twitter Archiver completed', 'info', 'default', 'TwitterArchiver', '');
 
 	}	
 	

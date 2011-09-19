@@ -1,187 +1,951 @@
 Array
 (
-    [slug] => twitter-2011-09-15-1
-    [user_id] => 1
-    [pubdate] => 1316109953
-    [status] => 2
-    [content_type] => 1
-    [title] => Author tweeted
-    [tags] => twitter
-    [content] => <p>@<a href="http://twitter.com/rrrrrrrix">rrrrrrrix</a> magic smoke?</p>
+    [0] => stdClass Object
+        (
+            [in_reply_to_status_id_str] => 115628278013894656
+            [truncated] => 
+            [in_reply_to_user_id_str] => 770837
+            [geo] => 
+            [retweet_count] => 0
+            [contributors] => 
+            [coordinates] => 
+            [user] => stdClass Object
+                (
+                    [statuses_count] => 3472
+                    [favourites_count] => 9
+                    [protected] => 
+                    [default_profile] => 
+                    [profile_text_color] => 000000
+                    [profile_image_url] => http://a0.twimg.com/profile_images/1417984654/mugshot_yeah_normal.png
+                    [name] => Nathanael Phillips
+                    [profile_sidebar_fill_color] => f0e9da
+                    [listed_count] => 5
+                    [following] => 
+                    [profile_background_tile] => 
+                    [utc_offset] => -25200
+                    [description] => Geek, Maker, proto-Hacker, would-be Jack-of-All-Trades
+                    [location] => Phoenix, AZ
+                    [contributors_enabled] => 
+                    [verified] => 
+                    [profile_link_color] => 647eab
+                    [followers_count] => 79
+                    [url] => http://coffeebot.net
+                    [profile_sidebar_border_color] => 634405
+                    [screen_name] => CBNathanael
+                    [default_profile_image] => 
+                    [notifications] => 
+                    [show_all_inline_media] => 
+                    [geo_enabled] => 
+                    [profile_use_background_image] => 1
+                    [friends_count] => 97
+                    [id_str] => 104649537
+                    [is_translator] => 
+                    [lang] => en
+                    [time_zone] => Arizona
+                    [created_at] => Thu Jan 14 00:00:05 +0000 2010
+                    [profile_background_color] => c6a66c
+                    [id] => 104649537
+                    [follow_request_sent] => 
+                    [profile_background_image_url_https] => https://si0.twimg.com/profile_background_images/66812306/twitbg.jpg
+                    [profile_background_image_url] => http://a0.twimg.com/profile_background_images/66812306/twitbg.jpg
+                    [profile_image_url_https] => https://si0.twimg.com/profile_images/1417984654/mugshot_yeah_normal.png
+                )
+
+            [favorited] => 
+            [in_reply_to_screen_name] => kevinbringard
+            [source] => <a href="http://choqok.gnufolks.org/" rel="nofollow">Choqok</a>
+            [id_str] => 115629511596441600
+            [entities] => stdClass Object
+                (
+                    [hashtags] => Array
+                        (
+                        )
+
+                    [urls] => Array
+                        (
+                        )
+
+                    [user_mentions] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Kevin
+                                    [indices] => Array
+                                        (
+                                            [0] => 0
+                                            [1] => 14
+                                        )
+
+                                    [screen_name] => kevinbringard
+                                    [id_str] => 770837
+                                    [id] => 770837
+                                )
+
+                        )
+
+                )
+
+            [in_reply_to_status_id] => 1.1562827801389E+17
+            [id] => 1.1562951159644E+17
+            [created_at] => Mon Sep 19 03:33:18 +0000 2011
+            [place] => 
+            [retweeted] => 
+            [in_reply_to_user_id] => 770837
+            [text] => @kevinbringard we'd love CO. you has job for me?
+        )
+
+    [1] => stdClass Object
+        (
+            [in_reply_to_status_id_str] => 115626466561101824
+            [truncated] => 
+            [in_reply_to_user_id_str] => 770837
+            [geo] => 
+            [retweet_count] => 0
+            [contributors] => 
+            [coordinates] => 
+            [user] => stdClass Object
+                (
+                    [statuses_count] => 3472
+                    [favourites_count] => 9
+                    [protected] => 
+                    [default_profile] => 
+                    [profile_text_color] => 000000
+                    [profile_image_url] => http://a0.twimg.com/profile_images/1417984654/mugshot_yeah_normal.png
+                    [name] => Nathanael Phillips
+                    [profile_sidebar_fill_color] => f0e9da
+                    [listed_count] => 5
+                    [following] => 
+                    [profile_background_tile] => 
+                    [utc_offset] => -25200
+                    [description] => Geek, Maker, proto-Hacker, would-be Jack-of-All-Trades
+                    [location] => Phoenix, AZ
+                    [contributors_enabled] => 
+                    [verified] => 
+                    [profile_link_color] => 647eab
+                    [followers_count] => 79
+                    [url] => http://coffeebot.net
+                    [profile_sidebar_border_color] => 634405
+                    [screen_name] => CBNathanael
+                    [default_profile_image] => 
+                    [notifications] => 
+                    [show_all_inline_media] => 
+                    [geo_enabled] => 
+                    [profile_use_background_image] => 1
+                    [friends_count] => 97
+                    [id_str] => 104649537
+                    [is_translator] => 
+                    [lang] => en
+                    [time_zone] => Arizona
+                    [created_at] => Thu Jan 14 00:00:05 +0000 2010
+                    [profile_background_color] => c6a66c
+                    [id] => 104649537
+                    [follow_request_sent] => 
+                    [profile_background_image_url_https] => https://si0.twimg.com/profile_background_images/66812306/twitbg.jpg
+                    [profile_background_image_url] => http://a0.twimg.com/profile_background_images/66812306/twitbg.jpg
+                    [profile_image_url_https] => https://si0.twimg.com/profile_images/1417984654/mugshot_yeah_normal.png
+                )
+
+            [favorited] => 
+            [in_reply_to_screen_name] => kevinbringard
+            [source] => <a href="http://choqok.gnufolks.org/" rel="nofollow">Choqok</a>
+            [id_str] => 115627433494974464
+            [entities] => stdClass Object
+                (
+                    [hashtags] => Array
+                        (
+                        )
+
+                    [urls] => Array
+                        (
+                        )
+
+                    [user_mentions] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Kevin
+                                    [indices] => Array
+                                        (
+                                            [0] => 0
+                                            [1] => 14
+                                        )
+
+                                    [screen_name] => kevinbringard
+                                    [id_str] => 770837
+                                    [id] => 770837
+                                )
+
+                        )
+
+                )
+
+            [in_reply_to_status_id] => 1.156264665611E+17
+            [id] => 1.1562743349497E+17
+            [created_at] => Mon Sep 19 03:25:03 +0000 2011
+            [place] => 
+            [retweeted] => 
+            [in_reply_to_user_id] => 770837
+            [text] => @kevinbringard I have grape soda...but I don't know if I want to drink it b/c I haven't had it in ages, and I don't know if I'll like it.
+        )
+
+    [2] => stdClass Object
+        (
+            [in_reply_to_status_id_str] => 115616729786355712
+            [truncated] => 
+            [in_reply_to_user_id_str] => 770837
+            [geo] => 
+            [retweet_count] => 0
+            [contributors] => 
+            [coordinates] => 
+            [user] => stdClass Object
+                (
+                    [statuses_count] => 3469
+                    [favourites_count] => 9
+                    [protected] => 
+                    [profile_text_color] => 000000
+                    [profile_image_url] => http://a0.twimg.com/profile_images/1417984654/mugshot_yeah_normal.png
+                    [name] => Nathanael Phillips
+                    [profile_sidebar_fill_color] => f0e9da
+                    [listed_count] => 5
+                    [following] => 1
+                    [profile_background_tile] => 
+                    [utc_offset] => -25200
+                    [description] => Geek, Maker, proto-Hacker, would-be Jack-of-All-Trades
+                    [location] => Phoenix, AZ
+                    [contributors_enabled] => 
+                    [verified] => 
+                    [default_profile] => 
+                    [profile_link_color] => 647eab
+                    [followers_count] => 79
+                    [url] => http://coffeebot.net
+                    [profile_sidebar_border_color] => 634405
+                    [screen_name] => CBNathanael
+                    [default_profile_image] => 
+                    [notifications] => 
+                    [show_all_inline_media] => 
+                    [geo_enabled] => 
+                    [profile_use_background_image] => 1
+                    [friends_count] => 97
+                    [id_str] => 104649537
+                    [is_translator] => 
+                    [lang] => en
+                    [time_zone] => Arizona
+                    [created_at] => Thu Jan 14 00:00:05 +0000 2010
+                    [profile_background_color] => c6a66c
+                    [id] => 104649537
+                    [follow_request_sent] => 
+                    [profile_background_image_url_https] => https://si0.twimg.com/profile_background_images/66812306/twitbg.jpg
+                    [profile_background_image_url] => http://a0.twimg.com/profile_background_images/66812306/twitbg.jpg
+                    [profile_image_url_https] => https://si0.twimg.com/profile_images/1417984654/mugshot_yeah_normal.png
+                )
+
+            [favorited] => 
+            [in_reply_to_screen_name] => kevinbringard
+            [source] => <a href="http://choqok.gnufolks.org/" rel="nofollow">Choqok</a>
+            [id_str] => 115621549570142210
+            [entities] => stdClass Object
+                (
+                    [hashtags] => Array
+                        (
+                        )
+
+                    [urls] => Array
+                        (
+                        )
+
+                    [user_mentions] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Kevin
+                                    [indices] => Array
+                                        (
+                                            [0] => 0
+                                            [1] => 14
+                                        )
+
+                                    [screen_name] => kevinbringard
+                                    [id_str] => 770837
+                                    [id] => 770837
+                                )
+
+                        )
+
+                )
+
+            [in_reply_to_status_id] => 1.1561672978636E+17
+            [id] => 1.1562154957014E+17
+            [created_at] => Mon Sep 19 03:01:40 +0000 2011
+            [place] => 
+            [retweeted] => 
+            [in_reply_to_user_id] => 770837
+            [text] => @kevinbringard hehe
+        )
+
+    [3] => stdClass Object
+        (
+            [in_reply_to_status_id_str] => 115613463027527681
+            [truncated] => 
+            [in_reply_to_user_id_str] => 770837
+            [geo] => 
+            [retweet_count] => 0
+            [contributors] => 
+            [coordinates] => 
+            [user] => stdClass Object
+                (
+                    [statuses_count] => 3470
+                    [favourites_count] => 9
+                    [protected] => 
+                    [profile_text_color] => 000000
+                    [profile_image_url] => http://a0.twimg.com/profile_images/1417984654/mugshot_yeah_normal.png
+                    [name] => Nathanael Phillips
+                    [profile_sidebar_fill_color] => f0e9da
+                    [default_profile] => 
+                    [listed_count] => 5
+                    [following] => 
+                    [profile_background_tile] => 
+                    [utc_offset] => -25200
+                    [description] => Geek, Maker, proto-Hacker, would-be Jack-of-All-Trades
+                    [location] => Phoenix, AZ
+                    [contributors_enabled] => 
+                    [verified] => 
+                    [profile_link_color] => 647eab
+                    [followers_count] => 79
+                    [url] => http://coffeebot.net
+                    [profile_sidebar_border_color] => 634405
+                    [screen_name] => CBNathanael
+                    [default_profile_image] => 
+                    [notifications] => 
+                    [show_all_inline_media] => 
+                    [geo_enabled] => 
+                    [profile_use_background_image] => 1
+                    [friends_count] => 97
+                    [id_str] => 104649537
+                    [is_translator] => 
+                    [lang] => en
+                    [time_zone] => Arizona
+                    [created_at] => Thu Jan 14 00:00:05 +0000 2010
+                    [profile_background_color] => c6a66c
+                    [id] => 104649537
+                    [follow_request_sent] => 
+                    [profile_background_image_url_https] => https://si0.twimg.com/profile_background_images/66812306/twitbg.jpg
+                    [profile_background_image_url] => http://a0.twimg.com/profile_background_images/66812306/twitbg.jpg
+                    [profile_image_url_https] => https://si0.twimg.com/profile_images/1417984654/mugshot_yeah_normal.png
+                )
+
+            [favorited] => 
+            [in_reply_to_screen_name] => kevinbringard
+            [source] => <a href="http://choqok.gnufolks.org/" rel="nofollow">Choqok</a>
+            [id_str] => 115615071299846144
+            [entities] => stdClass Object
+                (
+                    [hashtags] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [indices] => Array
+                                        (
+                                            [0] => 42
+                                            [1] => 65
+                                        )
+
+                                    [text] => realitydistortionfield
+                                )
+
+                        )
+
+                    [urls] => Array
+                        (
+                        )
+
+                    [user_mentions] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Kevin
+                                    [indices] => Array
+                                        (
+                                            [0] => 0
+                                            [1] => 14
+                                        )
+
+                                    [screen_name] => kevinbringard
+                                    [id_str] => 770837
+                                    [id] => 770837
+                                )
+
+                        )
+
+                )
+
+            [in_reply_to_status_id] => 1.1561346302753E+17
+            [id] => 1.1561507129985E+17
+            [created_at] => Mon Sep 19 02:35:55 +0000 2011
+            [place] => 
+            [retweeted] => 
+            [in_reply_to_user_id] => 770837
+            [text] => @kevinbringard You need to get out of the #realitydistortionfield, bro
+        )
+
+    [4] => stdClass Object
+        (
+            [in_reply_to_status_id_str] => 
+            [truncated] => 
+            [in_reply_to_user_id_str] => 
+            [geo] => 
+            [retweet_count] => 100+
+            [contributors] => 
+            [coordinates] => 
+            [retweeted_status] => stdClass Object
+                (
+                    [in_reply_to_status_id_str] => 
+                    [truncated] => 
+                    [in_reply_to_user_id_str] => 
+                    [geo] => 
+                    [retweet_count] => 100+
+                    [contributors] => 
+                    [coordinates] => 
+                    [user] => stdClass Object
+                        (
+                            [statuses_count] => 16070
+                            [favourites_count] => 62
+                            [protected] => 
+                            [profile_text_color] => 000000
+                            [profile_image_url] => http://a3.twimg.com/profile_images/422905448/me2_normal.png
+                            [name] => Ryan North
+                            [profile_sidebar_fill_color] => FFFFFF
+                            [listed_count] => 1633
+                            [following] => 
+                            [profile_background_tile] => 
+                            [utc_offset] => -18000
+                            [description] => I write @dinosaurcomics and @qwantz, run Project Wonderful, my weight is posted at @skinnytimeryan, where is the party, I think the party might be RIGHT HERE
+                            [location] => Toronto, which is in CANADA
+                            [contributors_enabled] => 
+                            [verified] => 
+                            [profile_link_color] => 0000ff
+                            [followers_count] => 18122
+                            [url] => http://qwantz.com
+                            [profile_sidebar_border_color] => 000000
+                            [screen_name] => ryanqnorth
+                            [default_profile_image] => 
+                            [notifications] => 
+                            [show_all_inline_media] => 1
+                            [geo_enabled] => 1
+                            [profile_use_background_image] => 1
+                            [friends_count] => 175
+                            [id_str] => 14162415
+                            [is_translator] => 
+                            [default_profile] => 
+                            [lang] => en
+                            [time_zone] => Quito
+                            [created_at] => Mon Mar 17 10:41:31 +0000 2008
+                            [profile_background_color] => 4c8bd9
+                            [id] => 14162415
+                            [follow_request_sent] => 
+                            [profile_background_image_url_https] => https://si0.twimg.com/profile_background_images/135751776/meandvictor2.jpg
+                            [profile_background_image_url] => http://a1.twimg.com/profile_background_images/135751776/meandvictor2.jpg
+                            [profile_image_url_https] => https://si0.twimg.com/profile_images/422905448/me2_normal.png
+                        )
+
+                    [favorited] => 
+                    [in_reply_to_screen_name] => 
+                    [source] => <a href="http://www.echofon.com/" rel="nofollow">Echofon</a>
+                    [id_str] => 115584031315345408
+                    [entities] => stdClass Object
+                        (
+                            [hashtags] => Array
+                                (
+                                )
+
+                            [urls] => Array
+                                (
+                                )
+
+                            [user_mentions] => Array
+                                (
+                                )
+
+                        )
+
+                    [in_reply_to_status_id] => 
+                    [id] => 1.1558403131535E+17
+                    [created_at] => Mon Sep 19 00:32:35 +0000 2011
+                    [place] => 
+                    [retweeted] => 
+                    [in_reply_to_user_id] => 
+                    [text] => Does anyone else's phone ever have this weird bug where the internet's really boring and then you get sad
+                )
+
+            [user] => stdClass Object
+                (
+                    [statuses_count] => 3470
+                    [favourites_count] => 9
+                    [protected] => 
+                    [profile_text_color] => 000000
+                    [profile_image_url] => http://a0.twimg.com/profile_images/1417984654/mugshot_yeah_normal.png
+                    [name] => Nathanael Phillips
+                    [profile_sidebar_fill_color] => f0e9da
+                    [listed_count] => 5
+                    [following] => 1
+                    [profile_background_tile] => 
+                    [utc_offset] => -25200
+                    [description] => Geek, Maker, proto-Hacker, would-be Jack-of-All-Trades
+                    [location] => Phoenix, AZ
+                    [contributors_enabled] => 
+                    [verified] => 
+                    [profile_link_color] => 647eab
+                    [followers_count] => 79
+                    [url] => http://coffeebot.net
+                    [profile_sidebar_border_color] => 634405
+                    [screen_name] => CBNathanael
+                    [default_profile_image] => 
+                    [notifications] => 
+                    [show_all_inline_media] => 
+                    [geo_enabled] => 
+                    [profile_use_background_image] => 1
+                    [friends_count] => 97
+                    [id_str] => 104649537
+                    [is_translator] => 
+                    [default_profile] => 
+                    [lang] => en
+                    [time_zone] => Arizona
+                    [created_at] => Thu Jan 14 00:00:05 +0000 2010
+                    [profile_background_color] => c6a66c
+                    [id] => 104649537
+                    [follow_request_sent] => 
+                    [profile_background_image_url_https] => https://si0.twimg.com/profile_background_images/66812306/twitbg.jpg
+                    [profile_background_image_url] => http://a0.twimg.com/profile_background_images/66812306/twitbg.jpg
+                    [profile_image_url_https] => https://si0.twimg.com/profile_images/1417984654/mugshot_yeah_normal.png
+                )
+
+            [favorited] => 
+            [in_reply_to_screen_name] => 
+            [source] => <a href="http://choqok.gnufolks.org/" rel="nofollow">Choqok</a>
+            [id_str] => 115612277713014785
+            [entities] => stdClass Object
+                (
+                    [hashtags] => Array
+                        (
+                        )
+
+                    [urls] => Array
+                        (
+                        )
+
+                    [user_mentions] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Ryan North
+                                    [indices] => Array
+                                        (
+                                            [0] => 3
+                                            [1] => 14
+                                        )
+
+                                    [screen_name] => ryanqnorth
+                                    [id_str] => 14162415
+                                    [id] => 14162415
+                                )
+
+                        )
+
+                )
+
+            [in_reply_to_status_id] => 
+            [id] => 1.1561227771301E+17
+            [created_at] => Mon Sep 19 02:24:49 +0000 2011
+            [place] => 
+            [retweeted] => 
+            [in_reply_to_user_id] => 
+            [text] => RT @ryanqnorth: Does anyone else's phone ever have this weird bug where the internet's really boring and then you get sad
+        )
+
+    [5] => stdClass Object
+        (
+            [in_reply_to_status_id_str] => 
+            [truncated] => 
+            [in_reply_to_user_id_str] => 
+            [geo] => 
+            [retweet_count] => 0
+            [contributors] => 
+            [coordinates] => 
+            [user] => stdClass Object
+                (
+                    [default_profile] => 
+                    [statuses_count] => 3470
+                    [favourites_count] => 9
+                    [protected] => 
+                    [profile_text_color] => 000000
+                    [profile_image_url] => http://a0.twimg.com/profile_images/1417984654/mugshot_yeah_normal.png
+                    [name] => Nathanael Phillips
+                    [profile_sidebar_fill_color] => f0e9da
+                    [listed_count] => 5
+                    [following] => 1
+                    [profile_background_tile] => 
+                    [utc_offset] => -25200
+                    [description] => Geek, Maker, proto-Hacker, would-be Jack-of-All-Trades
+                    [location] => Phoenix, AZ
+                    [contributors_enabled] => 
+                    [verified] => 
+                    [profile_link_color] => 647eab
+                    [followers_count] => 79
+                    [url] => http://coffeebot.net
+                    [profile_sidebar_border_color] => 634405
+                    [screen_name] => CBNathanael
+                    [default_profile_image] => 
+                    [notifications] => 
+                    [show_all_inline_media] => 
+                    [geo_enabled] => 
+                    [profile_use_background_image] => 1
+                    [friends_count] => 97
+                    [id_str] => 104649537
+                    [is_translator] => 
+                    [lang] => en
+                    [time_zone] => Arizona
+                    [created_at] => Thu Jan 14 00:00:05 +0000 2010
+                    [profile_background_color] => c6a66c
+                    [id] => 104649537
+                    [follow_request_sent] => 
+                    [profile_background_image_url_https] => https://si0.twimg.com/profile_background_images/66812306/twitbg.jpg
+                    [profile_background_image_url] => http://a0.twimg.com/profile_background_images/66812306/twitbg.jpg
+                    [profile_image_url_https] => https://si0.twimg.com/profile_images/1417984654/mugshot_yeah_normal.png
+                )
+
+            [favorited] => 
+            [in_reply_to_screen_name] => 
+            [source] => <a href="http://pixelpipe.com/tools" rel="nofollow">Pixelpipe</a>
+            [id_str] => 115555629803900929
+            [entities] => stdClass Object
+                (
+                    [hashtags] => Array
+                        (
+                        )
+
+                    [urls] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [indices] => Array
+                                        (
+                                            [0] => 77
+                                            [1] => 97
+                                        )
+
+                                    [url] => http://t.co/zAj67g58
+                                    [display_url] => pi.pe/-4on8ln
+                                    [expanded_url] => http://pi.pe/-4on8ln
+                                )
+
+                        )
+
+                    [user_mentions] => Array
+                        (
+                        )
+
+                )
+
+            [in_reply_to_status_id] => 
+            [id] => 1.155556298039E+17
+            [created_at] => Sun Sep 18 22:39:43 +0000 2011
+            [possibly_sensitive] => 
+            [place] => 
+            [retweeted] => 
+            [in_reply_to_user_id] => 
+            [text] => I'm generally not a fan of puns on kids' clothing, but this made me giggle.  http://t.co/zAj67g58
+        )
+
+    [6] => stdClass Object
+        (
+            [in_reply_to_status_id_str] => 
+            [truncated] => 
+            [in_reply_to_user_id_str] => 
+            [geo] => 
+            [retweet_count] => 0
+            [contributors] => 
+            [coordinates] => 
+            [user] => stdClass Object
+                (
+                    [statuses_count] => 3467
+                    [favourites_count] => 9
+                    [protected] => 
+                    [profile_text_color] => 000000
+                    [profile_image_url] => http://a0.twimg.com/profile_images/1417984654/mugshot_yeah_normal.png
+                    [name] => Nathanael Phillips
+                    [profile_sidebar_fill_color] => f0e9da
+                    [listed_count] => 5
+                    [following] => 1
+                    [profile_background_tile] => 
+                    [utc_offset] => -25200
+                    [description] => Geek, Maker, proto-Hacker, would-be Jack-of-All-Trades
+                    [location] => Phoenix, AZ
+                    [contributors_enabled] => 
+                    [verified] => 
+                    [profile_link_color] => 647eab
+                    [followers_count] => 79
+                    [url] => http://coffeebot.net
+                    [profile_sidebar_border_color] => 634405
+                    [screen_name] => CBNathanael
+                    [default_profile_image] => 
+                    [notifications] => 
+                    [show_all_inline_media] => 
+                    [geo_enabled] => 
+                    [profile_use_background_image] => 1
+                    [friends_count] => 97
+                    [id_str] => 104649537
+                    [is_translator] => 
+                    [lang] => en
+                    [time_zone] => Arizona
+                    [created_at] => Thu Jan 14 00:00:05 +0000 2010
+                    [profile_background_color] => c6a66c
+                    [id] => 104649537
+                    [default_profile] => 
+                    [follow_request_sent] => 
+                    [profile_background_image_url_https] => https://si0.twimg.com/profile_background_images/66812306/twitbg.jpg
+                    [profile_background_image_url] => http://a0.twimg.com/profile_background_images/66812306/twitbg.jpg
+                    [profile_image_url_https] => https://si0.twimg.com/profile_images/1417984654/mugshot_yeah_normal.png
+                )
+
+            [favorited] => 
+            [in_reply_to_screen_name] => 
+            [source] => <a href="http://choqok.gnufolks.org/" rel="nofollow">Choqok</a>
+            [id_str] => 115526947441872896
+            [entities] => stdClass Object
+                (
+                    [hashtags] => Array
+                        (
+                        )
+
+                    [urls] => Array
+                        (
+                        )
+
+                    [user_mentions] => Array
+                        (
+                        )
+
+                )
+
+            [in_reply_to_status_id] => 
+            [id] => 1.1552694744187E+17
+            [created_at] => Sun Sep 18 20:45:45 +0000 2011
+            [place] => 
+            [retweeted] => 
+            [in_reply_to_user_id] => 
+            [text] => derp. just blew out my twitter rate-limit. no wonder my plugin "mysteriously" broke
+        )
+
+    [7] => stdClass Object
+        (
+            [in_reply_to_status_id_str] => 
+            [truncated] => 
+            [in_reply_to_user_id_str] => 
+            [geo] => 
+            [retweet_count] => 2
+            [contributors] => 
+            [coordinates] => 
+            [retweeted_status] => stdClass Object
+                (
+                    [in_reply_to_status_id_str] => 
+                    [truncated] => 
+                    [in_reply_to_user_id_str] => 
+                    [geo] => 
+                    [retweet_count] => 2
+                    [contributors] => 
+                    [coordinates] => 
+                    [user] => stdClass Object
+                        (
+                            [default_profile] => 
+                            [statuses_count] => 25617
+                            [favourites_count] => 3115
+                            [protected] => 
+                            [profile_text_color] => 666666
+                            [profile_image_url] => http://a2.twimg.com/profile_images/1291996410/5571104952_d2ae2e4bbb_normal.jpg
+                            [name] => Will Bradley
+                            [profile_sidebar_fill_color] => 252429
+                            [listed_count] => 116
+                            [following] => 
+                            [profile_background_tile] => 
+                            [utc_offset] => -25200
+                            [description] => Admin, Coder, Hacker (the good kind), Gamer. Occasional Snowboarder. Sometimes I pretend to be a leader.
+                            [location] => Tempe, Arizona
+                            [contributors_enabled] => 
+                            [verified] => 
+                            [profile_link_color] => 2FC2EF
+                            [followers_count] => 1399
+                            [url] => http://willbradley.name
+                            [profile_sidebar_border_color] => 181A1E
+                            [screen_name] => willbradley
+                            [default_profile_image] => 
+                            [notifications] => 
+                            [show_all_inline_media] => 
+                            [geo_enabled] => 1
+                            [profile_use_background_image] => 1
+                            [friends_count] => 1441
+                            [id_str] => 17326469
+                            [is_translator] => 
+                            [lang] => en
+                            [time_zone] => Arizona
+                            [created_at] => Wed Nov 12 00:17:57 +0000 2008
+                            [profile_background_color] => 1A1B1F
+                            [id] => 17326469
+                            [follow_request_sent] => 
+                            [profile_background_image_url_https] => https://si0.twimg.com/images/themes/theme9/bg.gif
+                            [profile_background_image_url] => http://a1.twimg.com/images/themes/theme9/bg.gif
+                            [profile_image_url_https] => https://si0.twimg.com/profile_images/1291996410/5571104952_d2ae2e4bbb_normal.jpg
+                        )
+
+                    [favorited] => 
+                    [in_reply_to_screen_name] => 
+                    [source] => <a href="http://twitter.com/download/android" rel="nofollow">Twitter for Android</a>
+                    [id_str] => 115506509751922689
+                    [entities] => stdClass Object
+                        (
+                            [hashtags] => Array
+                                (
+                                )
+
+                            [urls] => Array
+                                (
+                                )
+
+                            [user_mentions] => Array
+                                (
+                                    [0] => stdClass Object
+                                        (
+                                            [name] => kelly oxford
+                                            [indices] => Array
+                                                (
+                                                    [0] => 11
+                                                    [1] => 23
+                                                )
+
+                                            [screen_name] => kellyoxford
+                                            [id_str] => 22872643
+                                            [id] => 22872643
+                                        )
+
+                                )
+
+                        )
+
+                    [in_reply_to_status_id] => 
+                    [id] => 1.1550650975192E+17
+                    [created_at] => Sun Sep 18 19:24:32 +0000 2011
+                    [place] => 
+                    [retweeted] => 
+                    [in_reply_to_user_id] => 
+                    [text] => Trollmom! "@kellyoxford: I make choc chip pancakes and the kids say, "You're the best Mom!" I laugh, "These aren't for you." And eat them."
+                )
+
+            [user] => stdClass Object
+                (
+                    [default_profile] => 
+                    [statuses_count] => 3470
+                    [favourites_count] => 9
+                    [protected] => 
+                    [profile_text_color] => 000000
+                    [profile_image_url] => http://a0.twimg.com/profile_images/1417984654/mugshot_yeah_normal.png
+                    [name] => Nathanael Phillips
+                    [profile_sidebar_fill_color] => f0e9da
+                    [listed_count] => 5
+                    [following] => 1
+                    [profile_background_tile] => 
+                    [utc_offset] => -25200
+                    [description] => Geek, Maker, proto-Hacker, would-be Jack-of-All-Trades
+                    [location] => Phoenix, AZ
+                    [contributors_enabled] => 
+                    [verified] => 
+                    [profile_link_color] => 647eab
+                    [followers_count] => 79
+                    [url] => http://coffeebot.net
+                    [profile_sidebar_border_color] => 634405
+                    [screen_name] => CBNathanael
+                    [default_profile_image] => 
+                    [notifications] => 
+                    [show_all_inline_media] => 
+                    [geo_enabled] => 
+                    [profile_use_background_image] => 1
+                    [friends_count] => 97
+                    [id_str] => 104649537
+                    [is_translator] => 
+                    [lang] => en
+                    [time_zone] => Arizona
+                    [created_at] => Thu Jan 14 00:00:05 +0000 2010
+                    [profile_background_color] => c6a66c
+                    [id] => 104649537
+                    [follow_request_sent] => 
+                    [profile_background_image_url_https] => https://si0.twimg.com/profile_background_images/66812306/twitbg.jpg
+                    [profile_background_image_url] => http://a0.twimg.com/profile_background_images/66812306/twitbg.jpg
+                    [profile_image_url_https] => https://si0.twimg.com/profile_images/1417984654/mugshot_yeah_normal.png
+                )
+
+            [favorited] => 
+            [in_reply_to_screen_name] => 
+            [source] => <a href="http://choqok.gnufolks.org/" rel="nofollow">Choqok</a>
+            [id_str] => 115507654830456832
+            [entities] => stdClass Object
+                (
+                    [hashtags] => Array
+                        (
+                        )
+
+                    [urls] => Array
+                        (
+                        )
+
+                    [user_mentions] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [name] => Will Bradley
+                                    [indices] => Array
+                                        (
+                                            [0] => 3
+                                            [1] => 15
+                                        )
+
+                                    [screen_name] => willbradley
+                                    [id_str] => 17326469
+                                    [id] => 17326469
+                                )
+
+                            [1] => stdClass Object
+                                (
+                                    [name] => kelly oxford
+                                    [indices] => Array
+                                        (
+                                            [0] => 28
+                                            [1] => 40
+                                        )
+
+                                    [screen_name] => kellyoxford
+                                    [id_str] => 22872643
+                                    [id] => 22872643
+                                )
+
+                        )
+
+                )
+
+            [in_reply_to_status_id] => 
+            [id] => 1.1550765483046E+17
+            [created_at] => Sun Sep 18 19:29:05 +0000 2011
+            [place] => 
+            [retweeted] => 
+            [in_reply_to_user_id] => 
+            [text] => RT @willbradley: Trollmom! "@kellyoxford: I make choc chip pancakes and the kids say, "You're the best Mom!" I laugh, "These aren't for  ...
+        )
+
 )
 Array
 (
-    [slug] => twitter-2011-09-15-2
+    [slug] => twitter-2011-09-18
     [user_id] => 1
-    [pubdate] => 1316109990
+    [pubdate] => 1316404139
     [status] => 2
     [content_type] => 1
     [title] => Author tweeted
     [tags] => twitter
-    [content] => <p>I started using <a href="http://hashtags.org/search?query=pomodoroTechnique">#pomodoroTechnique</a> this week. It's done wonders for my workflow.</p>
-)
-Array
-(
-    [slug] => twitter-2011-09-15-3
-    [user_id] => 1
-    [pubdate] => 1316120804
-    [status] => 2
-    [content_type] => 1
-    [title] => Author tweeted
-    [tags] => twitter
-    [content] => <p>And in your dreams you can just dream of me / and I will be comin' home</p>
-)
-Array
-(
-    [slug] => twitter-2011-09-15-4
-    [user_id] => 1
-    [pubdate] => 1316120820
-    [status] => 2
-    [content_type] => 1
-    [title] => Author tweeted
-    [tags] => twitter
-    [content] => <p>because I am an ordinary guy / yes, except for when I spy</p>
-)
-Array
-(
-    [slug] => twitter-2011-09-15-5
-    [user_id] => 1
-    [pubdate] => 1316121426
-    [status] => 2
-    [content_type] => 1
-    [title] => Author tweeted
-    [tags] => twitter
-    [content] => <p><a href="http://hashtags.org/search?query=ChinoBandito">#ChinoBandito</a> in exchange for 10 minutes of work fixing a fan in a laptop? <a href="http://hashtags.org/search?query=yesplease">#yesplease</a></p>
-)
-Array
-(
-    [slug] => twitter-2011-09-15-6
-    [user_id] => 1
-    [pubdate] => 1316125880
-    [status] => 2
-    [content_type] => 1
-    [title] => Author tweeted
-    [tags] => twitter
-    [content] => <p>Current status:  <a href="http://t.co/QWfrR81i">http://t.co/QWfrR81i</a></p>
-)
-Array
-(
-    [slug] => twitter-2011-09-15-7
-    [user_id] => 1
-    [pubdate] => 1316134850
-    [status] => 2
-    [content_type] => 1
-    [title] => Author tweeted
-    [tags] => twitter
-    [content] => <p>@<a href="http://twitter.com/prhickey">prhickey</a> got military connections? @<a href="http://twitter.com/USAA">USAA</a> kicks ass.</p>
-)
-Array
-(
-    [slug] => twitter-2011-09-15-8
-    [user_id] => 1
-    [pubdate] => 1316144094
-    [status] => 2
-    [content_type] => 1
-    [title] => Author tweeted
-    [tags] => twitter
-    [content] => <p>@<a href="http://twitter.com/huertanix">huertanix</a> They /want/ people to present. Hot Pockets will just turn people away. But..hot pockey....? cc @<a href="http://twitter.com/jacobrosenthal">jacobrosenthal</a></p>
-)
-Array
-(
-    [slug] => twitter-2011-09-16-9
-    [user_id] => 1
-    [pubdate] => 1316189875
-    [status] => 2
-    [content_type] => 1
-    [title] => Author tweeted
-    [tags] => twitter
-    [content] => <p>Dangit. I don't have a suit. Maybe I'll rock it "Emperor's New Suit" style. <a href="http://hashtags.org/search?query=nosiriamnotnaked">#nosiriamnotnaked</a></p>
-)
-Array
-(
-    [slug] => twitter-2011-09-16-10
-    [user_id] => 1
-    [pubdate] => 1316201398
-    [status] => 2
-    [content_type] => 1
-    [title] => Author tweeted
-    [tags] => twitter
-    [content] => <p>@<a href="http://twitter.com/AcmePhoto">AcmePhoto</a> zuh? what's going on?</p>
-)
-Array
-(
-    [slug] => twitter-2011-09-16-11
-    [user_id] => 1
-    [pubdate] => 1316202381
-    [status] => 2
-    [content_type] => 1
-    [title] => Author tweeted
-    [tags] => twitter
-    [content] => <p>@<a href="http://twitter.com/AcmePhoto">AcmePhoto</a> yeah, I did a little googling. bizarre.</p>
-)
-Array
-(
-    [slug] => twitter-2011-09-16-12
-    [user_id] => 1
-    [pubdate] => 1316205230
-    [status] => 2
-    [content_type] => 1
-    [title] => Author tweeted
-    [tags] => twitter
-    [content] => <p>Massive Attack? <a href="http://hashtags.org/search?query=yesplease">#yesplease</a></p>
-)
-Array
-(
-    [slug] => twitter-2011-09-16-13
-    [user_id] => 1
-    [pubdate] => 1316227486
-    [status] => 2
-    [content_type] => 1
-    [title] => Author tweeted
-    [tags] => twitter
-    [content] => <p>@<a href="http://twitter.com/willbradley">willbradley</a> Awesome. And so true. sed gets us into bed every time.</p>
-)
-Array
-(
-    [slug] => twitter-2011-09-16-14
-    [user_id] => 1
-    [pubdate] => 1316229152
-    [status] => 2
-    [content_type] => 1
-    [title] => Author tweeted
-    [tags] => twitter
-    [content] => <p>ugh. why is @<a href="http://twitter.com/twitter">twitter</a> returning replies and RTs when I'm specifically asking it not to?</p>
-)
-Array
-(
-    [slug] => twitter-2011-09-16-15
-    [user_id] => 1
-    [pubdate] => 1316230628
-    [status] => 2
-    [content_type] => 1
-    [title] => Author tweeted
-    [tags] => twitter
-    [content] => <p>@<a href="http://twitter.com/willbradley">willbradley</a> @<a href="http://twitter.com/shaunastacy">shaunastacy</a> yeah...the fake ones are obnoxious, imo. Fortunately, my lady understands my geekiness, but doesn</p>
-)
-Array
-(
-    [slug] => twitter-2011-09-16-16
-    [user_id] => 1
-    [pubdate] => 1316230682
-    [status] => 2
-    [content_type] => 1
-    [title] => Author tweeted
-    [tags] => twitter
-    [content] => <p>@<a href="http://twitter.com/willbradley">willbradley</a> @<a href="http://twitter.com/shaunastacy">shaunastacy</a> ...doesn't pretend to know a lot. (like only reading the first chapter of a book; that's just lame)</p>
-)
-Array
-(
-    [slug] => twitter-2011-09-17-17
-    [user_id] => 1
-    [pubdate] => 1316273162
-    [status] => 2
-    [content_type] => 1
-    [title] => Author tweeted
-    [tags] => twitter
-    [content] => <p>When life hands you a lemon, just have another root beer.</p>
+    [content] => <p class="tweetarchive_text"><p class="tweetarchive_text">RT @<a href="http://twitter.com/willbradley">willbradley</a>: Trollmom! "@<a href="http://twitter.com/kellyoxford">kellyoxford</a>: I make choc chip pancakes and the kids say, "You're the best Mom!" I laugh, "These aren't for  ...</p><p class="tweetarchive_date"><a href="http://www.twitter.com/#!/CBNathanael/status/115507654830456832"></a></p><p class="tweetarchive_text">derp. just blew out my twitter rate-limit. no wonder my plugin "mysteriously" broke</p><p class="tweetarchive_date"><a href="http://www.twitter.com/#!/CBNathanael/status/115526947441872896"></a></p><p class="tweetarchive_text">I'm generally not a fan of puns on kids' clothing, but this made me giggle.  <a href="http://t.co/zAj67g58">http://t.co/zAj67g58</a></p><p class="tweetarchive_date"><a href="http://www.twitter.com/#!/CBNathanael/status/115555629803900929"></a></p><p class="tweetarchive_text">RT @<a href="http://twitter.com/ryanqnorth">ryanqnorth</a>: Does anyone else's phone ever have this weird bug where the internet's really boring and then you get sad</p><p class="tweetarchive_date"><a href="http://www.twitter.com/#!/CBNathanael/status/115612277713014785"></a></p><p class="tweetarchive_text">@<a href="http://twitter.com/kevinbringard">kevinbringard</a> You need to get out of the <a href="http://hashtags.org/search?query=realitydistortionfield">#realitydistortionfield</a>, bro</p><p class="tweetarchive_date"><a href="http://www.twitter.com/#!/CBNathanael/status/115615071299846144"></a></p><p class="tweetarchive_text">@<a href="http://twitter.com/kevinbringard">kevinbringard</a> hehe</p><p class="tweetarchive_date"><a href="http://www.twitter.com/#!/CBNathanael/status/115621549570142210"></a></p><p class="tweetarchive_text">@<a href="http://twitter.com/kevinbringard">kevinbringard</a> I have grape soda...but I don't know if I want to drink it b/c I haven't had it in ages, and I don't know if I'll like it.</p><p class="tweetarchive_date"><a href="http://www.twitter.com/#!/CBNathanael/status/115627433494974464"></a></p><p class="tweetarchive_text">@<a href="http://twitter.com/kevinbringard">kevinbringard</a> we'd love CO. you has job for me?</p><p class="tweetarchive_date"><a href="http://www.twitter.com/#!/CBNathanael/status/115629511596441600"></a></p></p>
 )

@@ -3,7 +3,7 @@
 	<name>Twitter Archiver</name>
 	<license url="http://www.apache.org/licenses/LICENSE-2.0.html">Apache Software License 2.0</license>
 	<author url="http://coffeebot.net">Nathanael Phillips</author>
-	<version>0.1a</version>
+	<version>0.1b</version>
 	<url>http://www.coffeebot.net/</url>
 	<description><![CDATA[Twitter Archiving plugin for Habari.]]></description>
 	<copyright>2010</copyright>
