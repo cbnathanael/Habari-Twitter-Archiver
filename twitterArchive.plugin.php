@@ -268,7 +268,7 @@ class TwitterArchiver extends Plugin
     $fp = fopen(dirname( __FILE__ ) .'/data.txt', 'w');
 	
 		$response = $connection->get('statuses/user_timeline',$parameters);
-    //fwrite( $fp, print_r( $response, TRUE ) );
+    fwrite( $fp, print_r( $response, TRUE ) );
     //twitter returns tweets in descending order, we need them in ascending (the order in which they appeared)
     $response = array_reverse( $response );
     
@@ -281,18 +281,16 @@ class TwitterArchiver extends Plugin
 				/* link to hashtags np-- added break in the regex b/c the ? > combo broke vim's syntax hilighting and it drove me batty*/
 				$tweet->text = preg_replace( '/(?<!\w)#((?'.'>\d{1,64}|)[\w-.]{1,64})/', '<a href="' . Options::get( 'twitterArchiver__hashtags_query' ) . '$1">#$1</a>', $tweet->text );
 			}
-		}
+		} 
     if ( Options::get( 'twitterArchiver__multiple_posts' ) == 0 ) {
-      $post = new Post();
       $post_content = '';
       foreach ( $response as $tweet ) {
         $post_content .= '<p class="tweetarchive_text">'.$tweet->text.'</p>';
         if( Options::get( 'twitterArchiver__link_to_tweet' ) == 1 ) {
-          $post_content .= '<p class="tweetarchive_date"><a href="http://www.twitter.com/#!/'.$content->screen_name.'/status/'.$tweet->id_str.'">'.strtotime('h:i:s A', $tweet->created_at).'</a></p>';
+          $post_content .= '<p class="tweetarchive_date"><a href="http://www.twitter.com/#!/'.$content->screen_name.'/status/'.$tweet->id_str.'">'.date('h:i:s A', strtotime( $tweet->created_at ) ).'</a></p>';
         }
         else {
-         $post_content .= '<p class="tweetarchive_date">'.strtotime('h:i:s A', $tweet->created_at).'</p>';
- 
+          $post_content .= '<p class="tweetarchive_date">'.date('h:i:s A', strtotime( $tweet->created_at ) ).'</p>';
         }
         $lastID = $tweet->id_str;
       }
@@ -304,28 +302,27 @@ class TwitterArchiver extends Plugin
         'content_type' => 1,
         'title' => Options::get( 'twitterArchiver__post_title' ),
         'tags' => Options::get( 'twitterArchiver__post_tags' ),
-        'content' => '<p class="tweetarchive_text">'.$post_content.'</p>',
+        'content' => $post_content,
       );
       fwrite( $fp, print_r( $postdata, TRUE ) ); 
-      $post = Post::create( $postdata );
+      $this->make_post( $postdata );
     }
     else {
-      $i= 0;
+      $i = 0;
     
       foreach ( $response as $tweet ) {
-        $post = new Post();
         $post_content = '<p class="tweetarchive_text">' . $tweet->text . '</p>';
         if( Options::get( 'twitterArchiver__link_to_tweet' ) == 1 ) {
-          $post_content .= '<p class="tweetarchive_date"><a href="http://www.twitter.com/#!/'.$content->screen_name.'/status/'.$tweet->id_str.'">'.strtotime('h:i:s A', $tweet->created_at).'</a></p>';
+          $post_content .= '<p class="tweetarchive_date"><a href="http://www.twitter.com/#!/'.$content->screen_name.'/status/'.$tweet->id_str.'">'.date('h:i:s A', strtotime( $tweet->created_at ) ).'</a></p>';
         }
         else {
-          $post_content .= '<p class="tweetarchive_date">'.strtotime('h:i:s A', $tweet->created_at).'</p>';
+          $post_content .= '<p class="tweetarchive_date">'.date('h:i:s A', strtotime( $tweet->created_at ) ).'</p>';
         } 
         $i++;
         $postdata = array(
-          'slug' => 'twitter-'.date('Y-m-d', strtotime($tweet->created_at)).'-'.$i,
+          'slug' => 'twitter-'.date('Y-m-d', strtotime( $tweet->created_at ) ).'-'.$i,
           'user_id' => 1,
-          'pubdate' => strtotime( $tweet->created_at ),
+          'pubdate' => strtotime( 'now' ), //$tweet->created_at ),
           'status' => 2, // 1=draft, 2=published
           'content_type' => 1,
           'title' => Options::get( 'twitterArchiver__post_title' ),
@@ -334,19 +331,23 @@ class TwitterArchiver extends Plugin
         );
           
         $lastID = $tweet->id_str;
-        $post = Post::create( $postdata );
-        unset( $post );
+        $this->make_post( $postdata );
         fwrite( $fp, print_r($postdata, TRUE) );
       }
     }
-    
+    fwrite( $fp, 'lastID: '.$lastID ); 
     fclose($fp);
     //Options::set( 'twitterArchiver__last_id', $lastID );
 		EventLog::log('Twitter Archiver completed', 'info', 'default', 'TwitterArchiver', '');
 
 	}	
-	
+
+  public function make_post( $postdata ) {
+    $post = new Post();
+    $post = Post::create ( $postdata );
+  }	
 	
 }
+
 
 ?>
