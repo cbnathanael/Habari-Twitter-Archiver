@@ -3,8 +3,8 @@
 
 class TwitterArchiver extends Plugin
 {
-	CONST CONSUMER_KEY = "ZenVbxTsgEgG3AbhdhrRZA";
-	CONST CONSUMER_SECRET = "SjQjI8SNVVrJIhi5eEqvZIndxAbTcC7rf5rm5MhPFwM";
+	CONST CONSUMER_KEY = "";
+	CONST CONSUMER_SECRET = "";
 	
 	/**
 	 * Sets default options; daily archival, do not archive @-replies, linkify URLs, run hashtag queries.
